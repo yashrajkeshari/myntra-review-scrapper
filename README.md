@@ -15,7 +15,7 @@ To set up the project locally, follow these steps:
    cd myntra-review-scraper
    ```
 
-2. Create a new conda environment and activate it
+2. Create a new conda environment and activate it:
 
    ```bash
    python -m .venv venv
