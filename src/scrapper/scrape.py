@@ -223,12 +223,12 @@ class ScrapeReviews:
             return data
             
             
-                
-            # columns = data.columns
+             #use when flask app is used to remove last three comment and above do '3 return data   
+            #columns = data.columns
 
-            # values = [[data.loc[i, col] for col in data.columns ] for i in range(len(data)) ]
+            #values = [[data.loc[i, col] for col in data.columns ] for i in range(len(data)) ]
             
-            # return columns, values
+            #return columns, values
         
     
 

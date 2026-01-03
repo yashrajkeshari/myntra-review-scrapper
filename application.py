@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_cors import cross_origin
-from src.scrapper.scrape import Scrape
+from src.scrapper.scrape import ScrapeReviews
 
 
 application = Flask(__name__) # initializing a flask appa
@@ -16,8 +16,11 @@ def homePage():
 @app.route("/review", methods=['POST', 'GET'])
 def review():
     if request.method == 'POST':
-        scrape = Scrape(request)
-        columns, data = scrape.get_data()
+        scrape = ScrapeReviews(
+            product_name=request.form['content'],
+            no_of_products=int(request.form['prod_no'])
+        )
+        columns, data = scrape.get_review_data()
         
         
     return render_template("results.html",
