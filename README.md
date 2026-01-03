@@ -9,34 +9,31 @@ This project is a Myntra review scraper that allows users to extract and analyze
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/PWskills-DataScienceTeam/myntra-review-scrapper.git
+   git clone https://github.com/yashrajkeshari/myntra-review-scrapper.git
    cd myntra-review-scraper
    ```
 
 2. Create a new conda environment and activate it
-```bash
-conda create -p ./env python=3.10 -y
-#to activate the environment
-conda activate ./env 
-#or 
-source activate ./env
-```
+   python -m .venv venv
+   .venv\Scripts\activate
 
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+4. Replace the environment variable in `.env` file
+   Add the MongoDB environment variable in the `.env` file
 
-3. Replace the environment variable in `.env` file
-    Add the MongoDB environment variable in the `.env` file
+5. Run the Streamlit/Flask application:
 
-4. Run the Streamlit application:
    ```bash
+   python application.py
    streamlit run app.py
    ```
 
-5. Access the application in your web browser at [http://localhost:8501](http://localhost:8501).
+6. Access the application in your web browser at [http://localhost:8501](http://localhost:8501).
 
 ## Dependencies
 
