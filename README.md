@@ -16,8 +16,11 @@ To set up the project locally, follow these steps:
    ```
 
 2. Create a new conda environment and activate it
+
+   ```bash
    python -m .venv venv
    .venv\Scripts\activate
+   ```
 
 3. Install dependencies:
    ```bash
